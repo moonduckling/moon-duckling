@@ -1,0 +1,49 @@
+<!-- TODO: smooth change into the second page + loading page with animation -->
+
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Moon Duckling</title>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="shortcut icon" href="/src/logo.svg" type="image/x-icon">
+        <link rel="icon" href="/src/logo.svg" type="image/x-icon">
+    
+        <script type=module src="/scripts/main.js"></script>
+
+        <script>
+            function show() {
+                var x = document.getElementById("hidden-text");
+                if (!x.classList.contains("show")) {
+                    x.classList.add("show");
+                } else {
+                    x.classList.remove("show");
+                }
+            }
+        </script>
+    </head>
+    
+    <body class="index">
+        <section id="intro" class="my-text">
+            <img src="/src/logo.svg"/>
+            <h1>Where to today?</h1>
+            <ul>
+                <li><button onclick="window.location.href='about.html'">about creator</button></li>
+                <li>
+                    <button onclick="show()">about Moon Duckling</button>
+                    <p id="hidden-text">
+                        Moon Duckling is an aesthetic brand specializing in cute artwork and clothing
+                        to bring everyone's inner child out. It's made with love and keeping everyone's needs in mind, including sensory issues. 
+                        The main mascot is Chiru, a little duckling with overthinking tendencies.
+                    </p>
+                </li>
+                <div>Coming soon</div>
+                <li><button class="disabled">shop</button></li>
+            </ul>
+            <my-footer></my-footer>
+        </section>
+    </body>
+</html>
