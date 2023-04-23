@@ -2,7 +2,7 @@ class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header>
-            <a href="/">Moon Duckling</a>
+            <a href="https://taiyo-harenohi.github.io/">Moon Duckling</a>
         </header>
     `
     }
