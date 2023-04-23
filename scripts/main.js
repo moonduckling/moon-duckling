@@ -39,6 +39,18 @@ class MyFooter extends HTMLElement {
 }
 customElements.define('my-footer', MyFooter)
 
+class DarkFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <footer id="foot">
+            <div>Made by @moon.duckling. </div>
+           <div> All rights reserved.</div>
+        </footer>
+        `
+    }
+}
+customElements.define('dark-footer', DarkFooter)
+
 // Add the "loaded" class to the text after the page has loaded
 window.onload = function() {
     document.querySelector('.my-text').classList.add('loaded');

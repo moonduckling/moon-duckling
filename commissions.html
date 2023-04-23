@@ -15,31 +15,32 @@
     </head>
     
     <body class="body">
-        <my-header></my-header>
-        <my-navigation></my-navigation>
-
-        <section id="about" class="my-text">    
-            <h1>Want to ask for commission, have a bussiness preposition or just have a question?</h1>
-            <h3>Hit me up via this form!</h3>
-
-            <form method="POST" action="https://formsubmit.co/baca15a4027b6f00011b8ce250a57553">
-                <div>
-                    <input type="text" class="field" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div>
-                    <input type="email" class="field" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div>
-                    <input type="text" class="field" id="subject" name="subject" placeholder="Subject">
-                </div>
-                <div>
-                    <textarea class="field area" id="message" name="message" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" id="btn-send">send</button>
-            </form>
-
-    </section>
-
-    <my-footer></my-footer>
+        <div class="container">
+            <my-header></my-header>
+            <my-navigation></my-navigation>
+    
+            <section id="about" class="my-text">    
+                <h1>Want to ask for commission, have a bussiness preposition or just have a question?</h1>
+                <h3>Hit me up via this form!</h3>
+    
+                <form method="POST" action="https://formsubmit.co/baca15a4027b6f00011b8ce250a57553">
+                    <div>
+                        <input type="text" class="field" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <input type="email" class="field" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div>
+                        <input type="text" class="field" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <textarea class="field area" id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" id="btn-send">send</button>
+                </form>     
+            </section>
+        
+            <my-footer></my-footer>
+        </div>
     </body>
 </html>

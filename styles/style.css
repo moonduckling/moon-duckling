@@ -302,10 +302,10 @@ header a:active {
 }
 
 .body {
-    max-width: 1512px;
+    max-width: 2000px;
     margin: auto;
     font-family: raleway;
-    background: linear-gradient(#334B68, #D5E5EC);
+    background-color: #435874EE;
     scroll-behavior: smooth;
 }
 
@@ -375,6 +375,14 @@ button.disabled {
 }
 
 footer {
+    margin-top: 60px;
+    color: #D5E5EC;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#foot {
     margin-top: 60px;
     color: #334B68;
     font-size: 18px;
