@@ -17,7 +17,7 @@
 #intro ul div {
     font-size: 24px;
     color: #435874;
-    text-decoration: underline;
+    text-decoration: underline; /* to make sure it is noticable */
 }
 
 #hidden-text {
@@ -91,6 +91,7 @@
     margin: 0;
 }
 
+/* this layout looks the most balanced with the three columns */
 #skills {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -142,7 +143,7 @@
     opacity: 0.8;
 }
 
-/* funnny interactive things, so it keeps an user entertained*/
+/* funnny interactive things, so it keeps the user entertained*/
 .field:hover {
     background-color: #D5E5EC;
     transform: scale(1.025);
@@ -155,6 +156,7 @@
     color: #334B68;
 }
 
+/* for resizing message area*/
 .area {
     min-height: 150px;
     max-height: 200px;
@@ -162,6 +164,7 @@
     min-width: 50%;
 }
 
+/* changing colours of the placeholder texts*/
 ::placeholder {
     color: #435874;
 }
@@ -174,14 +177,10 @@
     margin-bottom: 20px;
 }
 
-
-/* TODO: images can be opened and looked at */
-
-
 /* My Work */
 #artwork {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%; /* this seems to be the best ratio for the images */
     grid-template-rows: 50% 50%;
     justify-items: center;
     gap: 5px;
@@ -194,6 +193,7 @@
     opacity: 0.8;
 }
 
+/* funny animation */
 #artwork img:hover {
     transform: scale(1.05);
     transition-duration: 0.5s;
@@ -217,6 +217,7 @@
     opacity: 0.8;
 }
 
+/* funny animation */
 #design img:hover {
     transform: scale(1.05);
     transition-duration: 0.5s;
@@ -224,7 +225,6 @@
  }
 
 /* socials page */
-
 #socials div {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -237,6 +237,7 @@
     opacity: 0.8;
 }
 
+/* funny animation */
 #socials img:hover {
     transform: scale(1.05);
     transition-duration: 0.5s;
@@ -369,6 +370,7 @@ button.active {
     transform: translateY(2px);
 }
 
+/* making disabled button for the shop button */
 button.disabled {
     pointer-events: none;
     opacity: 0.5;
@@ -382,6 +384,7 @@ footer {
     margin-bottom: 20px;
 }
 
+/* custom style of the footer for index.html */
 #foot {
     margin-top: 60px;
     color: #334B68;
@@ -397,7 +400,6 @@ footer div {
 /* animation for the stars*/
 body i {
     position: absolute;
-    /*background: #F0F2F3;*/
     background-image: url("/src/star.svg");
     animation: animate linear infinite;
     z-index: -1;
@@ -416,7 +418,7 @@ body i {
     }
 }
 
-
+/* animation for components when the page loads*/
 .my-text {
     opacity: 0;
     transform: translateY(-20px);
@@ -442,8 +444,6 @@ body i {
     body {
         margin: 0;
     }
-
-    /* TODO: nice navigation in the top right corner*/
 
     #about {
         border: 0;
@@ -471,16 +471,13 @@ body i {
         display: block;
     }
 
-
     #artwork {
         display: block;
     }
 
-
     #design {
         display: block;
     }
-
 
     #socials div {
         display: block;
@@ -492,7 +489,7 @@ body i {
         width: 50%;
     }
 
-    /* so it looks more like a book with bookmarks*/
+    /* navigation change, so it looks more like a book with bookmarks*/
     #navigation button {
         padding: 15px;
         font-size: 18px;
@@ -509,9 +506,3 @@ body i {
         padding: 0;
     }
 }
-
-/*
-* {
-    border: 3px solid red;
-}
-*/
